@@ -40,10 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Avaliacao.cs" />
+    <Compile Include="Entities\Curso.cs" />
+    <Compile Include="Entities\Discente.cs" />
+    <Compile Include="Entities\Disciplina.cs" />
+    <Compile Include="Entities\DisciplinaMatriculada.cs" />
+    <Compile Include="Entities\Docente.cs" />
+    <Compile Include="Entities\Falta.cs" />
+    <Compile Include="Entities\Formacao.cs" />
+    <Compile Include="Entities\Turma.cs" />
+    <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entities\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
