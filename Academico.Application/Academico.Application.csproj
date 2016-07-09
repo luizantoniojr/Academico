@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DFB010EA-8891-4D41-A478-BF68C62C1021}</ProjectGuid>
+    <ProjectGuid>{B794CF42-7AE3-46AE-A991-A8B66A7E8F25}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Academico.Domain</RootNamespace>
-    <AssemblyName>Academico.Domain</AssemblyName>
+    <RootNamespace>Academico.Application</RootNamespace>
+    <AssemblyName>Academico.Application</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,13 +43,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Exceptions\" />
+    <Folder Include="AutoMapper\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
-    <Folder Include="Specification\" />
     <Folder Include="Validation\" />
-    <Folder Include="ValueObjects\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
