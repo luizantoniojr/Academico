@@ -5,6 +5,16 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academico.Domain", "Academico.Domain\Academico.Domain.csproj", "{DFB010EA-8891-4D41-A478-BF68C62C1021}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{3F1EE5C4-CCF0-4526-8AB3-24FE2908567D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{706F1962-FF1B-4F50-8F86-C7D0B41AB9E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{3B6E57AA-E086-4B9F-B9E4-D24D0255D9DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{031BBEF6-79F1-4A7D-8F3F-794FAA84803B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{3B2ED14E-3C2B-4BC3-AE61-67D461937DD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +28,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DFB010EA-8891-4D41-A478-BF68C62C1021} = {031BBEF6-79F1-4A7D-8F3F-794FAA84803B}
 	EndGlobalSection
 EndGlobal
