@@ -50,11 +50,23 @@
     <Compile Include="Entities\Formacao.cs" />
     <Compile Include="Entities\Turma.cs" />
     <Compile Include="Entities\Usuario.cs" />
+    <Compile Include="Interfaces\Repository\ICursoRepository.cs" />
+    <Compile Include="Interfaces\Repository\IDiscenteRepository.cs" />
+    <Compile Include="Interfaces\Repository\IDisciplinaMatriculadaRepository.cs" />
+    <Compile Include="Interfaces\Repository\IDisciplinaRepository.cs" />
+    <Compile Include="Interfaces\Repository\IDocenteRepository.cs" />
+    <Compile Include="Interfaces\Repository\IFaltaRepository.cs" />
+    <Compile Include="Interfaces\Repository\ITurmaRepository.cs" />
+    <Compile Include="Interfaces\Repository\IUsuarioRepository.cs" />
+    <Compile Include="Interfaces\Repository\IAvaliacaoRepository.cs" />
+    <Compile Include="Interfaces\Repository\IRepositoryBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Exceptions\" />
-    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\Services\" />
+    <Folder Include="Interfaces\Specification\" />
+    <Folder Include="Interfaces\Validation\" />
     <Folder Include="Services\" />
     <Folder Include="Specification\" />
     <Folder Include="Validation\" />
