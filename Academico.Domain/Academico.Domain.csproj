@@ -60,14 +60,32 @@
     <Compile Include="Interfaces\Repository\IUsuarioRepository.cs" />
     <Compile Include="Interfaces\Repository\IAvaliacaoRepository.cs" />
     <Compile Include="Interfaces\Repository\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Services\ICursoService.cs" />
+    <Compile Include="Interfaces\Services\IDiscenteService.cs" />
+    <Compile Include="Interfaces\Services\IDisciplinaMatriculadaService.cs" />
+    <Compile Include="Interfaces\Services\IDisciplinaService.cs" />
+    <Compile Include="Interfaces\Services\IDocenteService.cs" />
+    <Compile Include="Interfaces\Services\IFaltaService.cs" />
+    <Compile Include="Interfaces\Services\ITurmaService.cs" />
+    <Compile Include="Interfaces\Services\IUsuarioService.cs" />
+    <Compile Include="Interfaces\Services\IAvaliacaoService.cs" />
+    <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CursoService.cs" />
+    <Compile Include="Services\DiscenteService.cs" />
+    <Compile Include="Services\DisciplinaMatriculadaService.cs" />
+    <Compile Include="Services\DisciplinaService.cs" />
+    <Compile Include="Services\DocenteService.cs" />
+    <Compile Include="Services\FaltaService.cs" />
+    <Compile Include="Services\TurmaService.cs" />
+    <Compile Include="Services\UsuarioService.cs" />
+    <Compile Include="Services\AvaliacaoService.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Exceptions\" />
-    <Folder Include="Interfaces\Services\" />
     <Folder Include="Interfaces\Specification\" />
     <Folder Include="Interfaces\Validation\" />
-    <Folder Include="Services\" />
     <Folder Include="Specification\" />
     <Folder Include="Validation\" />
     <Folder Include="ValueObjects\" />
