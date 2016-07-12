@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Academico.Domain.Entities
 {
@@ -17,5 +14,6 @@ namespace Academico.Domain.Entities
         public string Nome { get; set; }
         public bool Ativo { get; set; }
         public virtual ICollection<Disciplina> GradeDisciplinas { get; set; }
+        public virtual ICollection<Turma> Turmas { get; set; }
     }
 }

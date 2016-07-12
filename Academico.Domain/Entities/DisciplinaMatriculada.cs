@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Academico.Domain.Entities
 {
@@ -10,9 +7,11 @@ namespace Academico.Domain.Entities
     {
         public DisciplinaMatriculada()
         {
+            Id = Guid.NewGuid();
             Avaliacoes = Avaliacoes ?? new List<Avaliacao>();
             Faltas = Faltas ?? new List<Falta>();
         }
+        public Guid Id { get; set; }
         public Guid DiscenteId { get; set; }
         public Guid DisciplinaId { get; set; }
         public virtual Discente Discente { get; set; }

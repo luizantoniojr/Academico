@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Academico.Domain.Entities
 {
@@ -16,5 +13,7 @@ namespace Academico.Domain.Entities
         public Guid CursoId { get; set; }
         public string Nome { get; set; }
         public virtual Curso Curso { get; set; }
+        public virtual ICollection<Discente> Discentes { get; set; }
+        public virtual ICollection<Docente> Docentes { get; set; }
     }
 }
