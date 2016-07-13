@@ -30,7 +30,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=59d6d24383174ac4, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocation.1.0.0\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,14 +53,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IAppServiceBase.cs" />
+    <Compile Include="Interfaces\IUsuarioAppService.cs" />
+    <Compile Include="Interfaces\ICursoAppService.cs" />
+    <Compile Include="Interfaces\IDiscenteAppService.cs" />
+    <Compile Include="Interfaces\IDisciplinaMatriculadaAppService.cs" />
+    <Compile Include="Interfaces\IDisciplinaAppService.cs" />
+    <Compile Include="Interfaces\IDocenteAppService.cs" />
+    <Compile Include="Interfaces\IFaltaAppService.cs" />
+    <Compile Include="Interfaces\ITurmaAppService.cs" />
+    <Compile Include="Interfaces\IAvaliacaoAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AppServiceBase.cs" />
+    <Compile Include="Services\CursoAppService.cs" />
+    <Compile Include="Services\DiscenteAppService.cs" />
+    <Compile Include="Services\DisciplinaAppService.cs" />
+    <Compile Include="Services\DisciplinaMatriculadaAppService.cs" />
+    <Compile Include="Services\DocenteAppService.cs" />
+    <Compile Include="Services\FaltaAppService.cs" />
+    <Compile Include="Services\TurmaAppService.cs" />
+    <Compile Include="Services\UsuarioAppService.cs" />
+    <Compile Include="Services\AvaliacaoAppService.cs" />
+    <Compile Include="Validation\ValidationAppError.cs" />
+    <Compile Include="Validation\ValidationAppResult.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AutoMapper\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
-    <Folder Include="Validation\" />
+    <Folder Include="FastMapper\" />
     <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Academico.Domain\Academico.Domain.csproj">
+      <Project>{DFB010EA-8891-4D41-A478-BF68C62C1021}</Project>
+      <Name>Academico.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Academico.Infra.Data\Academico.Infra.Data.csproj">
+      <Project>{d1ac6fce-41b0-4511-a12d-e6dd3457d6ae}</Project>
+      <Name>Academico.Infra.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -10,7 +10,7 @@ namespace Academico.Infra.CrossCutting.IoC
     {
         public static void RegisterServices(Container container)
         {
-            //Service
+            #region Registro dos Services
             container.Register<IAvaliacaoService, AvaliacaoService>();
             container.Register<ICursoService, CursoService>();
             container.Register<IDiscenteService, DiscenteService>();
@@ -21,8 +21,9 @@ namespace Academico.Infra.CrossCutting.IoC
             container.Register(typeof(IServiceBase<>), typeof(ServiceBase<>));
             container.Register<ITurmaService, TurmaService>();
             container.Register<IUsuarioService, UsuarioService>();
+            #endregion
 
-            //Repository
+            #region Registro dos Repositories
             container.Register<IAvaliacaoRepository, AvaliacaoRepository>();
             container.Register<ICursoRepository, CursoRepository>();
             container.Register<IDiscenteRepository, DiscenteRepository>();
@@ -33,6 +34,7 @@ namespace Academico.Infra.CrossCutting.IoC
             container.Register(typeof(IRepositoryBase<>), typeof(RepositoryBase<,>));
             container.Register<ITurmaRepository, TurmaRepository>();
             container.Register<IUsuarioRepository, UsuarioRepository>();
+            #endregion
         }
     }
 }

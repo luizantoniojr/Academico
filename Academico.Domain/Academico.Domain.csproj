@@ -81,6 +81,8 @@
     <Compile Include="Services\UsuarioService.cs" />
     <Compile Include="Services\AvaliacaoService.cs" />
     <Compile Include="Services\ServiceBase.cs" />
+    <Compile Include="ValueObjects\ValidationError.cs" />
+    <Compile Include="ValueObjects\ValidationResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Exceptions\" />
@@ -88,7 +90,6 @@
     <Folder Include="Interfaces\Validation\" />
     <Folder Include="Specification\" />
     <Folder Include="Validation\" />
-    <Folder Include="ValueObjects\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
