@@ -76,10 +76,18 @@
     <Compile Include="Services\AvaliacaoAppService.cs" />
     <Compile Include="Validation\ValidationAppError.cs" />
     <Compile Include="Validation\ValidationAppResult.cs" />
+    <Compile Include="ViewModels\AvaliacaoViewModel.cs" />
+    <Compile Include="ViewModels\CursoViewModel.cs" />
+    <Compile Include="ViewModels\DiscenteViewModel.cs" />
+    <Compile Include="ViewModels\DisciplinaViewModel.cs" />
+    <Compile Include="ViewModels\DisciplinaMatriculadaViewModel.cs" />
+    <Compile Include="ViewModels\DocenteViewModel.cs" />
+    <Compile Include="ViewModels\FaltaViewModel.cs" />
+    <Compile Include="ViewModels\TurmaViewModel.cs" />
+    <Compile Include="ViewModels\UsuarioViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FastMapper\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Academico.Domain\Academico.Domain.csproj">
