@@ -23,11 +23,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 -
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academico.Application", "Academico.Application\Academico.Application.csproj", "{B794CF42-7AE3-46AE-A991-A8B66A7E8F25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academico.Services.WebApi", "Academico.Services.WebApi\Academico.Services.WebApi.csproj", "{EB55267D-F566-40F5-8145-980FC4932BD0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academico.Infra.Data", "Academico.Infra.Data\Academico.Infra.Data.csproj", "{D1AC6FCE-41B0-4511-A12D-E6DD3457D6AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academico.Infra.CrossCutting.IoC", "Academico.Infra.CrossCutting.IoC\Academico.Infra.CrossCutting.IoC.csproj", "{63E8738A-014D-4D2D-BF98-37890550F86A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academico.Services.WebApi", "Academico.Services.WebApi\Academico.Services.WebApi.csproj", "{E45D52CD-7C1A-4B3C-B869-BDD5A86CD2B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,6 @@ Global
 		{B794CF42-7AE3-46AE-A991-A8B66A7E8F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B794CF42-7AE3-46AE-A991-A8B66A7E8F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B794CF42-7AE3-46AE-A991-A8B66A7E8F25}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB55267D-F566-40F5-8145-980FC4932BD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB55267D-F566-40F5-8145-980FC4932BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB55267D-F566-40F5-8145-980FC4932BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB55267D-F566-40F5-8145-980FC4932BD0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1AC6FCE-41B0-4511-A12D-E6DD3457D6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D1AC6FCE-41B0-4511-A12D-E6DD3457D6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1AC6FCE-41B0-4511-A12D-E6DD3457D6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -59,6 +55,10 @@ Global
 		{63E8738A-014D-4D2D-BF98-37890550F86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63E8738A-014D-4D2D-BF98-37890550F86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63E8738A-014D-4D2D-BF98-37890550F86A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E45D52CD-7C1A-4B3C-B869-BDD5A86CD2B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E45D52CD-7C1A-4B3C-B869-BDD5A86CD2B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E45D52CD-7C1A-4B3C-B869-BDD5A86CD2B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E45D52CD-7C1A-4B3C-B869-BDD5A86CD2B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,9 +69,9 @@ Global
 		{3293AC8A-B35C-4FAF-A349-A226A3D81CDD} = {3B2ED14E-3C2B-4BC3-AE61-67D461937DD8}
 		{DB96687F-B26F-43EC-B875-DD47E2951FA5} = {3B2ED14E-3C2B-4BC3-AE61-67D461937DD8}
 		{B794CF42-7AE3-46AE-A991-A8B66A7E8F25} = {3B6E57AA-E086-4B9F-B9E4-D24D0255D9DC}
-		{EB55267D-F566-40F5-8145-980FC4932BD0} = {706F1962-FF1B-4F50-8F86-C7D0B41AB9E5}
 		{D1AC6FCE-41B0-4511-A12D-E6DD3457D6AE} = {3293AC8A-B35C-4FAF-A349-A226A3D81CDD}
 		{63E8738A-014D-4D2D-BF98-37890550F86A} = {DB96687F-B26F-43EC-B875-DD47E2951FA5}
+		{E45D52CD-7C1A-4B3C-B869-BDD5A86CD2B8} = {706F1962-FF1B-4F50-8F86-C7D0B41AB9E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
