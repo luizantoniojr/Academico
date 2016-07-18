@@ -14,6 +14,6 @@ namespace Academico.Domain.Entities
         public string Nome { get; set; }
         public bool Ativo { get; set; }
         public virtual ICollection<Disciplina> GradeDisciplinas { get; set; }
-        public virtual ICollection<Turma> Turmas { get; set; }
+        public virtual IEnumerable<Turma> Turmas { get; set; }
     }
 }

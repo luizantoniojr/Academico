@@ -13,7 +13,7 @@ namespace Academico.Infra.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201607180059564_Academico.Infra.Data.Context.AcademicoContext"; }
+            get { return "201607180135391_Academico.Infra.Data.Context.AcademicoContext"; }
         }
         
         string IMigrationMetadata.Source

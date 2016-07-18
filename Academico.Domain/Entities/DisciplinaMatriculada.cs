@@ -16,7 +16,7 @@ namespace Academico.Domain.Entities
         public Guid DisciplinaId { get; set; }
         public virtual Discente Discente { get; set; }
         public virtual Disciplina Disciplina { get; set; }
-        public virtual ICollection<Avaliacao> Avaliacoes { get; set; }
-        public virtual ICollection<Falta> Faltas { get; set; }
+        public virtual IEnumerable<Avaliacao> Avaliacoes { get; set; }
+        public virtual IEnumerable<Falta> Faltas { get; set; }
     }
 }

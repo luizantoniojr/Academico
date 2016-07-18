@@ -13,7 +13,7 @@ namespace Academico.Domain.Entities
         public Guid CursoId { get; set; }
         public string Nome { get; set; }
         public virtual Curso Curso { get; set; }
-        public virtual ICollection<Discente> Discentes { get; set; }
+        public virtual IEnumerable<Discente> Discentes { get; set; }
         public virtual ICollection<Docente> Docentes { get; set; }
     }
 }
