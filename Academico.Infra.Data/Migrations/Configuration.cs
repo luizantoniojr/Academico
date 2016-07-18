@@ -1,12 +1,31 @@
-﻿using System.Data.Entity.Migrations;
-
 namespace Academico.Infra.Data.Migrations
 {
-    public class Configuration : DbMigrationsConfiguration<Context.AcademicoContext>
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
+
+    internal sealed class Configuration : DbMigrationsConfiguration<Academico.Infra.Data.Context.AcademicoContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
+        }
+
+        protected override void Seed(Academico.Infra.Data.Context.AcademicoContext context)
+        {
+            //  This method will be called after migrating to the latest version.
+
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
+            //  to avoid creating duplicate seed data. E.g.
+            //
+            //    context.People.AddOrUpdate(
+            //      p => p.FullName,
+            //      new Person { FullName = "Andrew Peters" },
+            //      new Person { FullName = "Brice Lambson" },
+            //      new Person { FullName = "Rowan Miller" }
+            //    );
+            //
         }
     }
 }
