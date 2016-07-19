@@ -4,7 +4,7 @@ using Academico.Infra.Data.Context;
 
 namespace Academico.Infra.Data.Repositories
 {
-    public class AvaliacaoRepository : RepositoryBase<Avaliacao, AcademicoContext>, IAvaliacaoRepository
+    public class AvaliacaoRepository : RepositoryBase<Avaliacao>, IAvaliacaoRepository
     {
     }
 }

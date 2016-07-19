@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Academico.Domain.Entities
+namespace Academico.Application.ViewModels
 {
     public class TurmaViewModel
     {
@@ -12,8 +12,8 @@ namespace Academico.Domain.Entities
         public Guid Id { get; set; }
         public Guid CursoId { get; set; }
         public string Nome { get; set; }
-        public virtual Curso Curso { get; set; }
-        public virtual ICollection<Discente> Discentes { get; set; }
-        public virtual ICollection<Docente> Docentes { get; set; }
+        public virtual CursoViewModel Curso { get; set; }
+        public virtual ICollection<DiscenteViewModel> Discentes { get; set; }
+        public virtual ICollection<DocenteViewModel> Docentes { get; set; }
     }
 }

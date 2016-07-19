@@ -4,7 +4,7 @@ using Academico.Infra.Data.Context;
 
 namespace Academico.Infra.Data.Repositories
 {
-    public class FaltaRepository : RepositoryBase<Falta, AcademicoContext>, IFaltaRepository
+    public class FaltaRepository : RepositoryBase<Falta>, IFaltaRepository
     {
     }
 }

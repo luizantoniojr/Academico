@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Academico.Domain.Entities
+namespace Academico.Application.ViewModels
 {
     public class FaltaViewModel
     {
@@ -11,6 +11,6 @@ namespace Academico.Domain.Entities
         public Guid Id { get; set; }
         public Guid DisciplinaFaltadaId { get; set; }
         public DateTime Data { get; set; }
-        public virtual DisciplinaMatriculada DisciplinaFaltada { get; set; }
+        public virtual DisciplinaMatriculadaViewModel DisciplinaFaltada { get; set; }
     }
 }

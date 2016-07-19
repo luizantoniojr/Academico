@@ -4,7 +4,7 @@ using Academico.Infra.Data.Context;
 
 namespace Academico.Infra.Data.Repositories
 {
-    public class DisciplinaRepository : RepositoryBase<Disciplina, AcademicoContext>, IDisciplinaRepository
+    public class DisciplinaRepository : RepositoryBase<Disciplina>, IDisciplinaRepository
     {
     }
 }

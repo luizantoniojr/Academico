@@ -10,11 +10,12 @@ using System.Linq.Expressions;
 
 namespace Academico.Infra.Data.Repositories
 {
-    public class RepositoryBase<TEntity, TContext> : IRepositoryBase<TEntity>
+    public class RepositoryBase<TEntity> : IRepositoryBase<TEntity>
         where TEntity : class
-        where TContext : IDbContext, new()
+        //where TContext : IDbContext
+        , new()
     {
-        private readonly ContextManager<TContext> _contextManager = ServiceLocator.Current.GetInstance<IContextManager<TContext>>() as ContextManager<TContext>;
+        private readonly ContextManager<AcademicoContext> _contextManager = new ContextManager<AcademicoContext>(); //ServiceLocator.Current.GetInstance<IContextManager<AcademicoContext>>() as ContextManager<AcademicoContext>;
 
         protected IDbSet<TEntity> DbSet;
         protected readonly IDbContext Context;

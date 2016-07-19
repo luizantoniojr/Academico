@@ -4,7 +4,7 @@ using Academico.Infra.Data.Context;
 
 namespace Academico.Infra.Data.Repositories
 {
-    public class TurmaRepository : RepositoryBase<Turma, AcademicoContext>, ITurmaRepository
+    public class TurmaRepository : RepositoryBase<Turma>, ITurmaRepository
     {
     }
 }

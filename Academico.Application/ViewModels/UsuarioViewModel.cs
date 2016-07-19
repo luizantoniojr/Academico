@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Academico.Domain.Entities
+namespace Academico.Application.ViewModels
 {
     public class UsuarioViewModel
     {

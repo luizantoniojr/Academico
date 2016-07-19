@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Academico.Domain.Entities
+namespace Academico.Application.ViewModels
 {
     public class AvaliacaoViewModel
     {
@@ -13,6 +13,6 @@ namespace Academico.Domain.Entities
         public string Nome { get; set; }
         public double Nota { get; set; }
         public int Peso { get; set; }
-        public virtual DisciplinaMatriculada DisciplinaAvaliada{ get; set; }
+        public virtual DisciplinaMatriculadaViewModel DisciplinaAvaliada{ get; set; }
     }
 }
