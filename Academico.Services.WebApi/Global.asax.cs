@@ -9,7 +9,6 @@ namespace Academico.Services.WebApi
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            SimpleInjectorInitializer.Initialize();
             FastMapperConfig.Initialize();
         }
     }

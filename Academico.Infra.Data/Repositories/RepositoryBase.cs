@@ -13,7 +13,7 @@ namespace Academico.Infra.Data.Repositories
     public class RepositoryBase<TEntity> : IRepositoryBase<TEntity>
         where TEntity : class, new()
     {
-        private readonly ContextManager<AcademicoContext> _contextManager = new ContextManager<AcademicoContext>();
+        private readonly ContextManager<AcademicoContext> _contextManager = ServiceLocator.Current.GetInstance<IContextManager<AcademicoContext>>() as ContextManager<AcademicoContext>;
 
         protected IDbSet<TEntity> DbSet;
         protected readonly IDbContext Context;

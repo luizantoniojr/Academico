@@ -19,14 +19,14 @@ namespace Academico.Services.WebApi.Controllers
         }
 
         [HttpPost]
-        [Route("products")]
+        [Route("cursos")]
         public HttpResponseMessage PostCurso(CursoViewModel curso)
         {
             if (curso == null)
                 return Request.CreateResponse(HttpStatusCode.BadRequest);
             try
             {
-                //_cursoAppService.Inserir(curso);
+                _cursoAppService.Inserir(curso);
                 return Request.CreateResponse(HttpStatusCode.Created, curso);
             }
             catch (Exception e)

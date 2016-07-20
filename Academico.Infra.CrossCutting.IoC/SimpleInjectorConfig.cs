@@ -7,8 +7,9 @@ using Academico.Infra.Data.Context;
 using Academico.Infra.Data.Interfaces;
 using Academico.Infra.Data.Repositories;
 using Academico.Infra.Data.UoW;
+using CommonServiceLocator.SimpleInjectorAdapter;
+using Microsoft.Practices.ServiceLocation;
 using SimpleInjector;
-using System;
 
 namespace Academico.Infra.CrossCutting.IoC
 {
@@ -60,6 +61,11 @@ namespace Academico.Infra.CrossCutting.IoC
             container.Register<IDbContext, AcademicoContext>(Lifestyle.Scoped);
             container.Register(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
             #endregion
+        }
+
+        public static void IniciarServiceLocator(Container container) {
+            var adapter = new SimpleInjectorServiceLocatorAdapter(container);
+            ServiceLocator.SetLocatorProvider(() => adapter);
         }
     }
 }
