@@ -1,5 +1,4 @@
 ﻿using Academico.Application.FastMapper;
-using Academico.Services.WebApi.App_Start;
 using System.Web.Http;
 
 namespace Academico.Services.WebApi

@@ -1,6 +1,6 @@
-﻿using FastMapper;
+﻿using Academico.Application.ViewModels;
 using Academico.Domain.Entities;
-using Academico.Application.ViewModels;
+using FastMapper;
 
 namespace Academico.Application.FastMapper
 {

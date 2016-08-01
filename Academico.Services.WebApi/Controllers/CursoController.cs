@@ -1,10 +1,10 @@
-﻿using Academico.Application.ViewModels;
+﻿using Academico.Application.Interfaces;
+using Academico.Application.ViewModels;
 using System;
 using System.Net;
 using System.Net.Http;
-using System.Web.Http.Cors;
-using Academico.Application.Interfaces;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace Academico.Services.WebApi.Controllers
 {
