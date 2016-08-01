@@ -34,5 +34,20 @@ namespace Academico.Services.WebApi.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
             }
         }
+
+        [HttpGet]
+        [Route("cursos")]
+        public HttpResponseMessage GetCurso(Guid cursoId)
+        {
+            try
+            {
+                var curso = _cursoAppService.Buscar(cursoId);
+                return Request.CreateResponse(HttpStatusCode.OK, curso);
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
     }
 }

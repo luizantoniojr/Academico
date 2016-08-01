@@ -4,6 +4,7 @@ using Academico.Domain.Entities;
 using Academico.Domain.Interfaces.Services;
 using Academico.Infra.Data.Context;
 using FastMapper;
+using System;
 
 namespace Academico.Application.Services
 {
@@ -22,6 +23,12 @@ namespace Academico.Application.Services
             BeginTransaction();
             _cursoService.Add(curso);
             Commit();
+        }
+
+        public CursoViewModel Buscar(Guid cursoId)
+        {
+            var curso = TypeAdapter.Adapt<Curso, CursoViewModel>(_cursoService.GetById(cursoId));
+            return curso;
         }
 
         public void Dispose()
