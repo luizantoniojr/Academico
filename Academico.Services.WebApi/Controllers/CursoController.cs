@@ -36,12 +36,61 @@ namespace Academico.Services.WebApi.Controllers
         }
 
         [HttpGet]
-        [Route("cursos")]
+        [Route("cursos/{cursoId}")]
         public HttpResponseMessage GetCurso(Guid cursoId)
         {
             try
             {
                 var curso = _cursoAppService.Buscar(cursoId);
+                return Request.CreateResponse(HttpStatusCode.OK, curso);
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("cursos")]
+        public HttpResponseMessage GetCurso()
+        {
+            try
+            {
+                var curso = _cursoAppService.Buscar();
+                return Request.CreateResponse(HttpStatusCode.OK, curso);
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+
+        [HttpPut]
+        [Route("cursos")]
+        public HttpResponseMessage PutCurso(CursoViewModel curso)
+        {
+            if (curso == null)
+                return Request.CreateResponse(HttpStatusCode.BadRequest);
+            try
+            {
+                 _cursoAppService.Editar(curso);
+                return Request.CreateResponse(HttpStatusCode.OK, curso);
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+
+        [HttpDelete]
+        [Route("cursos")]
+        public HttpResponseMessage DeleteCurso(CursoViewModel curso)
+        {
+            if (curso == null)
+                return Request.CreateResponse(HttpStatusCode.BadRequest);
+            try
+            {
+                _cursoAppService.Deletar(curso);
                 return Request.CreateResponse(HttpStatusCode.OK, curso);
             }
             catch (Exception e)

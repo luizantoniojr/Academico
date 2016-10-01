@@ -5,6 +5,7 @@ using Academico.Domain.Interfaces.Services;
 using Academico.Infra.Data.Context;
 using FastMapper;
 using System;
+using System.Collections.Generic;
 
 namespace Academico.Application.Services
 {
@@ -27,8 +28,26 @@ namespace Academico.Application.Services
 
         public CursoViewModel Buscar(Guid cursoId)
         {
-            var curso = TypeAdapter.Adapt<Curso, CursoViewModel>(_cursoService.GetById(cursoId));
-            return curso;
+            return TypeAdapter.Adapt<Curso, CursoViewModel>(_cursoService.GetById(cursoId));
+        }
+
+        public IEnumerable<CursoViewModel> Buscar()
+        {
+            return TypeAdapter.Adapt<IEnumerable<Curso>, IEnumerable<CursoViewModel>>(_cursoService.GetAll());
+        }
+
+        public void Editar(CursoViewModel curso)
+        {
+            BeginTransaction();
+            _cursoService.Update(TypeAdapter.Adapt<CursoViewModel, Curso>(curso));
+            Commit();
+        }
+
+        public void Deletar(CursoViewModel curso)
+        {
+            BeginTransaction();
+            _cursoService.Remove(TypeAdapter.Adapt<CursoViewModel, Curso>(curso));
+            Commit();
         }
 
         public void Dispose()

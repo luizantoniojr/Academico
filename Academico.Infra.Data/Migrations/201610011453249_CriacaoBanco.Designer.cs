@@ -7,13 +7,13 @@ namespace Academico.Infra.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AcademicoInfraDataContextAcademicoContext : IMigrationMetadata
+    public sealed partial class CriacaoBanco : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AcademicoInfraDataContextAcademicoContext));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CriacaoBanco));
         
         string IMigrationMetadata.Id
         {
-            get { return "201607180135391_Academico.Infra.Data.Context.AcademicoContext"; }
+            get { return "201610011453249_CriacaoBanco"; }
         }
         
         string IMigrationMetadata.Source

@@ -53,6 +53,7 @@ namespace Academico.Infra.Data.Repositories
 
         public virtual void Remove(TEntity obj)
         {
+            DbSet.Attach(obj);
             DbSet.Remove(obj);
         }
 

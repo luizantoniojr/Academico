@@ -1,5 +1,6 @@
 ﻿using Academico.Application.ViewModels;
 using System;
+using System.Collections.Generic;
 
 namespace Academico.Application.Interfaces
 {
@@ -7,5 +8,8 @@ namespace Academico.Application.Interfaces
     {
         void Inserir(CursoViewModel cursoViewModel);
         CursoViewModel Buscar(Guid cursoId);
+        IEnumerable<CursoViewModel> Buscar();
+        void Editar(CursoViewModel curso);
+        void Deletar(CursoViewModel curso);
     }
 }

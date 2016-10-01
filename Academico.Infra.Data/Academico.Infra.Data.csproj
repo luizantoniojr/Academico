@@ -90,9 +90,9 @@
     <Compile Include="Interfaces\IContextManager.cs" />
     <Compile Include="Interfaces\IDbContext.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
-    <Compile Include="Migrations\201607180135391_Academico.Infra.Data.Context.AcademicoContext.cs" />
-    <Compile Include="Migrations\201607180135391_Academico.Infra.Data.Context.AcademicoContext.Designer.cs">
-      <DependentUpon>201607180135391_Academico.Infra.Data.Context.AcademicoContext.cs</DependentUpon>
+    <Compile Include="Migrations\201610011453249_CriacaoBanco.cs" />
+    <Compile Include="Migrations\201610011453249_CriacaoBanco.Designer.cs">
+      <DependentUpon>201610011453249_CriacaoBanco.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -119,8 +119,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201607180135391_Academico.Infra.Data.Context.AcademicoContext.resx">
-      <DependentUpon>201607180135391_Academico.Infra.Data.Context.AcademicoContext.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610011453249_CriacaoBanco.resx">
+      <DependentUpon>201610011453249_CriacaoBanco.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
